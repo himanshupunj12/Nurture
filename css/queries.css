@@ -1,0 +1,231 @@
+@media (max-width: 84em) {
+  .container-hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .testimonial-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+  .container-hero {
+    column-gap: 4.8rem;
+  }
+  .testimonial-content {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  /* 1rem = 8px 8/16 = 0.5*/
+  html {
+    font-size: 50%;
+  }
+  .container-hero {
+    grid-template-columns: 1fr;
+    row-gap: 8rem;
+    padding: 0 8rem;
+  }
+  .content-hero {
+    text-align: center;
+  }
+  .delivered-meals {
+    justify-content: center;
+  }
+  .img-hero {
+    width: 60%;
+  }
+  .img-box-hero {
+    display: flex;
+    justify-content: center;
+  }
+  .delivered-meals {
+    margin-top: 4.8rem;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 2.4rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-container {
+    gap: 6.4rem;
+  }
+  .testimonial-gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .section-testimonials {
+    padding-bottom: 9.6rem;
+  }
+  .cta {
+    grid-template-columns: 60fr 40fr;
+  }
+  .form-cta {
+    grid-template-columns: 1fr;
+  }
+  .btn-cta {
+    margin-bottom: 1.6rem;
+  }
+  .testimonial {
+    padding: 2.4rem;
+  }
+  /* Mobile navigation */
+  .btn-mobile-nav {
+    display: block;
+  }
+  .nav-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+  }
+  .nav-main ul {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .nav-main-btn:link,
+  .nav-main-btn:visited {
+    font-size: 3rem;
+  }
+  .nav-main-open .nav-main {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-main-open .menu-icon {
+    display: none;
+  }
+  .nav-main-open .close-icon {
+    display: block;
+  }
+}
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .heading-secondary {
+    margin-bottom: 6.4rem;
+  }
+  .pricing-card {
+    width: 100%;
+    padding: 4.8rem 2.4rem 4.8rem 2.4rem;
+  }
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .footer-nav {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .logo-copy,
+  .contact {
+    grid-column: span 3;
+  }
+}
+/* Phones */
+@media (max-width: 34em) {
+  .container-hero {
+    padding: 0 3.2rem;
+  }
+  .section-hero {
+    padding-bottom: 6.4rem;
+  }
+  .btn:link,
+  .btn:visited {
+    font-size: 1.6rem;
+    padding: 1.6rem;
+  }
+  .btn-full:link,
+  .btn-full:visited {
+    margin-right: 0.8rem;
+  }
+  .img-hero {
+    width: 80%;
+  }
+  .logos img {
+    height: 1.2rem;
+  }
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+  .how-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .how-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .how-img-box {
+    transform: translateY(2.4rem);
+  }
+  .section-how {
+    padding-bottom: 4.8rem;
+  }
+  .testimonials-container {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .section-testimonials {
+    padding-bottom: 3.2rem;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+  .logo-copy {
+    margin-top: 1.6rem;
+  }
+  .feature {
+    text-align: center;
+  }
+}
